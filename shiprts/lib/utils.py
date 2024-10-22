@@ -3,12 +3,12 @@ from typing import Any, Protocol, TypeVar
 
 
 __all__ = (
-    'SupportsDunderLT',
-    'SupportsDunderGT',
-    'HasAddSubMul',
-    'SupportsRichComparison',
-    'clamp',
-    'map_range'
+    "SupportsDunderLT",
+    "SupportsDunderGT",
+    "HasAddSubMul",
+    "SupportsRichComparison",
+    "clamp",
+    "map_range",
 )
 
 # Stolen from pylance
@@ -17,12 +17,12 @@ _T_co = TypeVar("_T_co", covariant=True)
 
 
 class SupportsDunderLT(Protocol[_T_contra]):
-    def __lt__(self, other: _T_contra, /) -> bool:
-        ...
+    def __lt__(self, other: _T_contra, /) -> bool: ...
+
 
 class SupportsDunderGT(Protocol[_T_contra]):
-    def __gt__(self, other: _T_contra, /) -> bool:
-        ...
+    def __gt__(self, other: _T_contra, /) -> bool: ...
+
 
 class HasAddSubMul(Protocol[_T_contra, _T_co]):
     """Matches types which work with :py:func:`arcade.math.lerp`."""

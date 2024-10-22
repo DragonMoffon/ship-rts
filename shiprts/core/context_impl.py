@@ -18,7 +18,7 @@ class ApplicationContext(Base):
     def parse(cls: Self, args: list[str]) -> Self:
         config_name = args[0]
         return cls(get_config(config_name))
-    
+
     def initialise(self) -> None:
         self.window = Window()
 

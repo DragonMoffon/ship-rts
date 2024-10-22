@@ -15,9 +15,9 @@ class WindowConfig:
     width: int = 1280
     height: int = 720
     title: str = "Ships!"
-    update_rate: float = 1/60.0
-    fixed_rate: float = 1/20.0
-    draw_rate: float = 1/60.0
+    update_rate: float = 1 / 60.0
+    fixed_rate: float = 1 / 20.0
+    draw_rate: float = 1 / 60.0
 
 
 @dataclass(slots=True)
@@ -26,20 +26,19 @@ class ApplicationConfig:
     window: WindowConfig
 
 
-get_config_path = make_path_finder(config, 'toml')
+get_config_path = make_path_finder(config, "toml")
+
 
 def get_config(name: str) -> ApplicationConfig:
     path = get_config_path(name)
-    with open(path, 'rb') as config_fp:
+    with open(path, "rb") as config_fp:
         data = tomllib.load(config_fp)
-    return ApplicationConfig(
-        data['name'],
-        WindowConfig(**data.get('window', {}))
-    )
+    return ApplicationConfig(data["name"], WindowConfig(**data.get("window", {})))
+
 
 def put_config(config: ApplicationConfig) -> dict[str, Any]:
     app = asdict(config)
     path = get_config_path(config.name)
-    with open(path, 'wb') as config_fp:
+    with open(path, "wb") as config_fp:
         tomli_w.dump(app, config_fp)
     return app

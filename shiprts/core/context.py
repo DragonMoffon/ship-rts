@@ -2,6 +2,7 @@
 The abstract base class for the ApplicationContext for typing. Think of this as `context.h`.
 Saves me from writing `from typing import TypeChecking` absolutely everywhere
 """
+
 # noqa
 # fmt: off
 from __future__ import annotations

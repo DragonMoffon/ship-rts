@@ -4,12 +4,8 @@ from arcade import View as ArcadeView, Window as ArcadeWindow
 
 from shiprts import get_context
 
-__all__ = (
-    'Window',
-    'View',
-    'ArcadeWindow',
-    'ArcadeView'
-)
+__all__ = ("Window", "View", "ArcadeWindow", "ArcadeView")
+
 
 class Window(ArcadeWindow):
 
@@ -21,7 +17,7 @@ class Window(ArcadeWindow):
             ctx.config.window.title,
             update_rate=ctx.config.window.update_rate,
             fixed_rate=ctx.config.window.fixed_rate,
-            draw_rate=ctx.config.window.draw_rate
+            draw_rate=ctx.config.window.draw_rate,
         )
         self.show_view(View())
 
@@ -33,6 +29,7 @@ class Window(ArcadeWindow):
         To set a different view, call :py:meth:`~arcade.Window.show_view`.
         """
         return self._current_view
+
 
 class View(ArcadeView):
 
