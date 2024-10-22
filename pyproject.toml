@@ -15,6 +15,7 @@ requires-python = ">= 3.13"
 dependencies = [
     "arcade @ git+https://github.com/pythonarcade/arcade@development",
     "digiformatter==0.5.7.2",
+    "tomli-w"
 ]
 
 [project.optional-dependencies]
