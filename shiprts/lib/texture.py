@@ -5,7 +5,7 @@ A custom implimentation of `arcade.TextureAtlasBase` with spritesheet loading me
 from pathlib import Path
 import tomllib
 
-from arcade import ArcadeContext, Texture
+from arcade import ArcadeContext, Texture, SpriteSheet
 from arcade.texture_atlas import TextureAtlasBase
 
 from PIL import Image
@@ -16,6 +16,9 @@ class SpriteSheet:
     def __init__(self, img_path: Path, data_path: Path) -> None:
         with open(img_path, "rb") as img_fp:
             self.img = Image.open(img_fp)
+        with open(data_path, 'rb') as toml_fp:
+            self.data = tomllib.load(toml_fp)
+        
 
 
 class TextureAtlas(TextureAtlasBase):

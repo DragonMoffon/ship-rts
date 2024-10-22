@@ -1,5 +1,5 @@
 [[texture]]
-name='brig_destroyed'
+name='cutter_destroyed'
 x = 2
 y = 2
 width = 108
@@ -8,74 +8,605 @@ padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
+name='cutter_critical'
+x = 2
+y = 46
+width = 108
+height = 40
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='cutter_damaged'
+x = 2
+y = 90
+width = 108
+height = 40
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='cutter_full'
+x = 2
+y = 134
+width = 108
+height = 40
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='brig_destroyed'
+x = 2
+y = 178
+width = 108
+height = 50
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
 name='brig_critical'
-x = 0
-y = 0
-width = 0
-height = 0
+x = 2
+y = 232
+width = 108
+height = 50
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
 name='brig_damaged'
-x = 0
-y = 0
-width = 0
-height = 0
+x = 2
+y = 286
+width = 108
+height = 50
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
 name='brig_full'
-x = 0
-y = 0
-width = 0
-height = 0
+x = 2
+y = 340
+width = 108
+height = 50
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
-name='galleon_destroyed'
-x = 0
-y = 0
-width = 0
-height = 0
+name='sloop_destroyed'
+x = 509
+y = 509
+width = 2
+height = 2
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
-name='galleon_critical'
-x = 0
-y = 0
-width = 0
-height = 0
+name='sloop_critical'
+x = 2
+y = 468
+width = 38
+height = 20
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
-name='galleon_damaged'
-x = 0
-y = 0
-width = 0
-height = 0
+name='sloop_damaged'
+x = 44
+y = 468
+width = 38
+height = 20
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
-name='galleon_full'
-x = 0
-y = 0
-width = 0
-height = 0
+name='sloop_full'
+x = 86
+y = 468
+width = 38
+height = 20
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
 [[texture]]
-name=''
-x = 0
-y = 0
-width = 0
-height = 0
+name='galley_destroyed'
+x = 509
+y = 509
+width = 2
+height = 2
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galley_critical'
+x = 128
+y = 468
+width = 26
+height = 16
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galley_damaged'
+x = 158
+y = 468
+width = 26
+height = 16
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galley_full'
+x = 188
+y = 468
+width = 26
+height = 16
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_white_full'
+x = 114
+y = 2
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_white_damaged'
+x = 164
+y = 2
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_white_critical'
+x = 214
+y = 2
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_white_destroyed'
+x = 264
+y = 2
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_green_full'
+x = 114
+y = 72
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_green_damaged'
+x = 164
+y = 72
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_green_critical'
+x = 214
+y = 72
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_green_destroyed'
+x = 264
+y = 72
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_yellow_full'
+x = 114
+y = 142
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_yellow_damaged'
+x = 164
+y = 142
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_yellow_critical'
+x = 214
+y = 142
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_yellow_destroyed'
+x = 264
+y = 142
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_blue_full'
+x = 114
+y = 212
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_blue_damaged'
+x = 164
+y = 212
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_blue_critical'
+x = 214
+y = 212
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_blue_destroyed'
+x = 264
+y = 212
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_red_full'
+x = 114
+y = 282
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_red_damaged'
+x = 164
+y = 282
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_red_critical'
+x = 214
+y = 282
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_red_destroyed'
+x = 264
+y = 282
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_black_full'
+x = 114
+y = 352
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_black_damaged'
+x = 164
+y = 352
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_black_critical'
+x = 214
+y = 352
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='sail_black_destroyed'
+x = 264
+y = 352
+width = 46
+height = 66
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_destroyed'
+x = 2
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_white_full'
+x = 15
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_white_damaged'
+x = 27
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_white_critical'
+x = 40
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_green_full'
+x = 53
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_green_damaged'
+x = 65
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_green_critical'
+x = 78
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_yellow_full'
+x = 91
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_yellow_damaged'
+x = 103
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_yellow_critical'
+x = 116
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_blue_full'
+x = 129
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_blue_damaged'
+x = 141
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_blue_critical'
+x = 154
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_red_full'
+x = 167
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_red_damaged'
+x = 179
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_red_critical'
+x = 192
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_black_full'
+x = 205
+y = 422
+width = 8
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_black_damaged'
+x = 217
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='jib_black_critical'
+x = 230
+y = 422
+width = 9
+height = 42
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='mast_destroyed'
+x = 2
+y = 394
+width = 10
+height = 10
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='mast_full'
+x = 16
+y = 394
+width = 12
+height = 12
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_0'
+x = 32
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_1'
+x = 42
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_2'
+x = 52
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_3'
+x = 62
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_4'
+x = 72
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='crew_5'
+x = 82
+y = 394
+width = 6
+height = 7
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='default'
+x = 509
+y = 509
+width = 2
+height = 2
 padding = 2
 winding = [0, 1, 2, 3]
 points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
