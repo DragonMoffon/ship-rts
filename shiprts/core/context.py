@@ -16,6 +16,7 @@ class ApplicationContext:
     def __init__(self) -> None:
         self.config: ApplicationConfig = None
         self.window: Window = None
+        raise NotImplementedError
 
     @classmethod
     def parse(cls: Self, args: list[str]) -> Self: raise NotImplementedError
