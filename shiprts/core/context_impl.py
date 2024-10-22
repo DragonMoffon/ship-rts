@@ -5,6 +5,7 @@ from .context import ApplicationContext as Base
 
 from .config import ApplicationConfig, get_config
 from .application import Window
+from shiprts.views.atlas_debug import AtlasView
 
 
 class ApplicationContext(Base):
@@ -22,4 +23,5 @@ class ApplicationContext(Base):
         self.window = Window()
 
     def launch(self) -> None:
+        self.window.show_view(AtlasView())
         self.window.run()

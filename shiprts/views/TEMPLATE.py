@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 from shiprts.core.application import View
+
 
 class TEMPLATEView(View):
 

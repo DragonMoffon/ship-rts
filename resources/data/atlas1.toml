@@ -1,0 +1,81 @@
+[[texture]]
+name='brig_destroyed'
+x = 2
+y = 2
+width = 108
+height = 40
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='brig_critical'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='brig_damaged'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='brig_full'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galleon_destroyed'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galleon_critical'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galleon_damaged'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name='galleon_full'
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+[[texture]]
+name=''
+x = 0
+y = 0
+width = 0
+height = 0
+padding = 2
+winding = [0, 1, 2, 3]
+points = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]

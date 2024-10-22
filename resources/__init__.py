@@ -1,5 +1,8 @@
 from collections.abc import Sequence
+from pathlib import Path
 import json
+import tomllib
+import tomli_w
 from .filefactory import make_file_opener, make_path_finder, make_string_opener
 from arcade import (
     ArcadeContext,
@@ -35,7 +38,10 @@ __all__ = (
     'read_json',
     'open_json',
     'load_json',
-    'dump_json'
+    'dump_json',
+    'get_toml_path',
+    'load_toml',
+    'dump_toml'
 )
 
 # Shader methods
@@ -100,9 +106,18 @@ get_font_path = make_path_finder(fonts, 'ttf')
 def load_font(name: str, sub_directories: tuple[str, ...] = ()) -> None: _load_font(get_font_path(name, sub_directories))
 
 # Data Methods
-read_json = make_string_opener(data, 'json')
-open_json = make_file_opener(data, 'json')
-def load_json(name: str, sub_directories: tuple[str, ...] = ()) -> dict: return json.loads(read_json(name, sub_directories))
-def dump_json(name: str, data: dict, sub_directoreis: tuple[str, ...] = ()) -> None:
-    with open_json(name, sub_directoreis, 'w') as fp:
-        json.dump(data, fp)
+get_toml_path = make_path_finder(data, 'toml')
+def load_toml[T: dict](name: str, sub_directories: tuple[str, ...] = ()) -> T:
+    with open(get_toml_path(name, sub_directories), 'rb') as toml_fp:
+        return tomllib.load(toml_fp)
+
+def dump_toml[T: dict](name: str, data: T, sub_directories: tuple[str, ...] = ()):
+    with open(get_toml_path(name, sub_directories), 'wb') as toml_fp:
+        return tomli_w.dump(data, toml_fp)
+    
+def convert_json_toml(json_path: str | Path, sub_directories: tuple[str, ...] = ()):
+    json_path = Path(json_path)
+    name = json_path.stem
+    with open(json_path) as json_fp:
+        data = json.load(json_fp)
+    dump_toml(name, data, sub_directories)
