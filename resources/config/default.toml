@@ -1,0 +1,9 @@
+name = "default"
+
+[window]
+width = 1280
+height = 720
+title = "Ships!"
+update_rate = 0.016666666666666666
+fixed_rate = 0.05
+draw_rate = 0.016666666666666666
