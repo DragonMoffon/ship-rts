@@ -1,14 +1,8 @@
 from __future__ import annotations
-from typing import Any, Protocol, TypeVar, TYPE_CHECKING
-
-from arcade import get_window as get_arcade_window
-if TYPE_CHECKING:
-    from shiprts.lib.application import Window
+from typing import Any, Protocol, TypeVar
 
 
 __all__ = (
-    'get_window',
-    'get_arcade_window',
     'SupportsDunderLT',
     'SupportsDunderGT',
     'HasAddSubMul',
@@ -16,11 +10,6 @@ __all__ = (
     'clamp',
     'map_range'
 )
-
-
-def get_window() -> Window:
-    return get_arcade_window() # type: ignore -- This is just a type casting
-
 
 # Stolen from pylance
 _T_contra = TypeVar("_T_contra", contravariant=True)

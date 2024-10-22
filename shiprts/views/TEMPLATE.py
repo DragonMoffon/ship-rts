@@ -1,4 +1,4 @@
-from shiprts.lib.application import View
+from shiprts.core.application import View
 
 class TEMPLATEView(View):
 

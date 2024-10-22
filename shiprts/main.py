@@ -1,5 +1,6 @@
-from shiprts.lib.application import Window
-from shiprts.views.root import RootView
+from .core.application import Window
+from .views.root import RootView
+
 
 def main() -> None:
     win = Window()
