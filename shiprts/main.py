@@ -1,10 +1,13 @@
-from .core.application import Window
-from .views.root import RootView
+from sys import argv
+
+from .core.context_impl import ApplicationContext
+from shiprts import set_context
 
 
 def main() -> None:
-    win = Window()
-    root = RootView()
-
-    win.show_view(root)
-    win.run()
+    args = argv[1:] or ['default',]
+    ctx = ApplicationContext.parse(args)
+    set_context(ctx)
+    
+    ctx.initialise()
+    ctx.launch()

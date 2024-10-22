@@ -1,5 +1,8 @@
+from __future__ import annotations
+
 from arcade import View as ArcadeView, Window as ArcadeWindow
-# Update these classes if you want custom functionality in your Windows and Views.
+
+from shiprts import get_context
 
 __all__ = (
     'Window',
@@ -8,14 +11,28 @@ __all__ = (
     'ArcadeView'
 )
 
-WINDOW_WIDTH, WINDOW_HEIGHT = 1280,720
-WINDOW_TITLE = 'template'
-
 class Window(ArcadeWindow):
 
     def __init__(self):
-        super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
+        ctx = get_context()
+        super().__init__(
+            ctx.config.window.width,
+            ctx.config.window.height,
+            ctx.config.window.title,
+            update_rate=ctx.config.window.update_rate,
+            fixed_rate=ctx.config.window.fixed_rate,
+            draw_rate=ctx.config.window.draw_rate
+        )
+        self.show_view(View())
 
+    @property
+    def current_view(self) -> View:
+        """
+        The currently active view.
+
+        To set a different view, call :py:meth:`~arcade.Window.show_view`.
+        """
+        return self._current_view
 
 class View(ArcadeView):
 

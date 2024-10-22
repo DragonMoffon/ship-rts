@@ -1,11 +1,26 @@
+"""
+The abstract base class for the ApplicationContext for typing. Think of this as `context.h`.
+Saves me from writing `from typing import TypeChecking` absolutely everywhere
+"""
+# noqa
+# fmt: off
 from __future__ import annotations
-from .config import ApplicationConfig, get_config
+from typing import TYPE_CHECKING, Self
 
-from shiprts.core.application import Window
-
+if TYPE_CHECKING:
+    from .config import ApplicationConfig
+    from .application import Window
 
 class ApplicationContext:
 
     def __init__(self) -> None:
-        self.config: ApplicationConfig
-        self.window: Window
+        self.config: ApplicationConfig = None
+        self.window: Window = None
+
+    @classmethod
+    def parse(cls: Self, args: list[str]) -> Self: raise NotImplementedError
+
+    def initialise(self) -> None: raise NotImplementedError
+
+    def launch(self) -> None: raise NotImplementedError
+# fmt: on

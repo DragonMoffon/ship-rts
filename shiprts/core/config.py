@@ -30,9 +30,8 @@ get_config_path = make_path_finder(config, 'toml')
 
 def get_config(name: str) -> ApplicationConfig:
     path = get_config_path(name)
-    with open(path) as config_fp:
+    with open(path, 'rb') as config_fp:
         data = tomllib.load(config_fp)
-    print(data)
     return ApplicationConfig(
         data['name'],
         WindowConfig(**data.get('window', {}))
